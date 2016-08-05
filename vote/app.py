@@ -5,8 +5,15 @@ import socket
 import random
 import json
 
-option_a = os.getenv('OPTION_A', "Cats")
-option_b = os.getenv('OPTION_B', "Dogs")
+option_a = os.getenv('OPTION_A', "Docker Compose")
+option_b = os.getenv('OPTION_B', "Docker Engine")
+option_c = os.getenv('OPTION_C', "Docker Swarm")
+option_d = os.getenv('OPTION_D', "Docker Cloud")
+option_e = os.getenv('OPTION_E', "Docker Datacenter")
+option_f = os.getenv('OPTION_F', "Docker Machine")
+option_g = os.getenv('OPTION_B', "Docker UCP")
+option_h = os.getenv('OPTION_B', "Docker Trusted Registry")
+
 hostname = socket.gethostname()
 
 app = Flask(__name__)
@@ -34,6 +41,12 @@ def hello():
         'index.html',
         option_a=option_a,
         option_b=option_b,
+        option_c=option_c,
+        option_d=option_d,
+        option_e=option_e,
+        option_f=option_f,
+        option_g=option_g,
+        option_h=option_h,
         hostname=hostname,
         vote=vote,
     ))
