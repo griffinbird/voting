@@ -17,6 +17,12 @@
         <form id="choice" name='form' method="POST" action="/">
           <button id="a" type="submit" name="vote" class="a" value="a">{{option_a}}</button>
           <button id="b" type="submit" name="vote" class="b" value="b">{{option_b}}</button>
+          <button id="c" type="submit" name="vote" class="c" value="c">{{option_c}}</button>
+          <button id="d" type="submit" name="vote" class="d" value="d">{{option_d}}</button>
+          <button id="e" type="submit" name="vote" class="e" value="e">{{option_e}}</button>
+          <button id="f" type="submit" name="vote" class="f" value="f">{{option_f}}</button>
+          <button id="g" type="submit" name="vote" class="g" value="g">{{option_g}}</button>
+          <button id="h" type="submit" name="vote" class="h" value="h">{{option_h}}</button>
         </form>
         <div id="tip">
           (Tip: you can change your vote)
@@ -41,6 +47,36 @@
       if(vote == "b"){
         $(".b").prop('disabled', true);
         $(".b").html('{{option_b}} <i class="fa fa-check-circle"></i>');
+        $(".a").css('opacity','0.5');
+      }
+      if(vote == "c"){
+        $(".c").prop('disabled', true);
+        $(".c").html('{{option_c}} <i class="fa fa-check-circle"></i>');
+        $(".a").css('opacity','0.5');
+      }
+      if(vote == "d"){
+        $(".d").prop('disabled', true);
+        $(".d").html('{{option_d}} <i class="fa fa-check-circle"></i>');
+        $(".a").css('opacity','0.5');
+      }
+      if(vote == "e"){
+        $(".e").prop('disabled', true);
+        $(".e").html('{{option_e}} <i class="fa fa-check-circle"></i>');
+        $(".a").css('opacity','0.5');
+      }
+      if(vote == "f"){
+        $(".f").prop('disabled', true);
+        $(".f").html('{{option_f}} <i class="fa fa-check-circle"></i>');
+        $(".a").css('opacity','0.5');
+      }
+      if(vote == "g"){
+        $(".g").prop('disabled', true);
+        $(".g").html('{{option_g}} <i class="fa fa-check-circle"></i>');
+        $(".a").css('opacity','0.5');
+      }
+       if(vote == "h"){
+        $(".h").prop('disabled', true);
+        $(".h").html('{{option_h}} <i class="fa fa-check-circle"></i>');
         $(".a").css('opacity','0.5');
       }
     </script>
